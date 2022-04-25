@@ -50,9 +50,34 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; z-index: 10; float: left; 
     position: sticky;
     top: 0%;
 }
+
+.menu  a{
+    position: relative;
+    -webkit-text-stroke: 0.7px black; 
+}
+
+.menu a::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #FAD746;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu  a:hover::before{
+    transform: scale(1);
+}
+
 
 ul {
     list-style: none;
@@ -105,9 +130,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #FAD746;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px 5px gray;
+    box-shadow: 5px 5px 15px 5px #333333;
 }
 
 .producto__nombre {
@@ -191,6 +216,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 3px 3px 10px 3px #333333;
 }
 
 .Noticias__p {
@@ -224,6 +250,7 @@ main {
     background-color: #D60B06;
     display: flex;
     border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px #333333;
 
 }
 
@@ -250,19 +277,31 @@ textarea {
     align-items: center;
     justify-content: center;
 }
-
-.caja p {
-    font-size: 20px;
-    font-family: Oswald;
-    color: #FAD746;
-}
-
 .caja__p {
     width: 600px;
     padding: 10px;
     background-color: #D60B06;
     border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px #333333;
 }
+
+.caja p {
+    font-size: 20px;
+    font-family: Oswald;
+    color: #FAD746;
+    
+}
+.mapa___caja{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #D60B06;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px #333333;
+}
+
+
+
 
 @media (max-width: 880px) {
 

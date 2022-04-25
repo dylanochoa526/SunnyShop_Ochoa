@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SunnyShop</title>
     <link rel="shortcut icon" href="../assest/img/sunny Logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../assest/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +57,7 @@
         <h1>¿Quienes somos?</h1>
     </header>
     <main>
-        <section class="caja">
+        <section class="caja" data-aos="zoom-in" data-aos="zoom-in">
             <div>
                 <div class="caja__p">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis at, a laborum sit, quibusdam
@@ -69,11 +70,11 @@
                 </div>
             </div>
         </section>
-        <section class="mapa">
-            <div class="Titulo">
+        <section class="mapa" data-aos="zoom-in" data-aos="zoom-in">
+            <div class="Titulo" data-aos="zoom-in" data-aos="zoom-in">
                 <h3>¿donde nos encontramos?</h3>
             </div>
-            <div>
+            <div class="mapa___caja">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.1527665346!2d-58.573391870891506!3d-34.615557616846125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3d05457fbb%3A0xe160f4fce7f7c017!2sBuenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648272447961!5m2!1ses-419!2sar"
                     width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
@@ -90,6 +91,10 @@
             <img src="../assest/img/twitter.png" alt="">
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
