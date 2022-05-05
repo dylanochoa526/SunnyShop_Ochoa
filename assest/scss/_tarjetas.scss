@@ -1,0 +1,120 @@
+@import "_variables";
+
+.producto { 
+    width: 200px;
+    height: 390px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #333333;
+
+    .producto__nombre {
+        text-align: center;
+        font-family: Oswald;
+    }
+    .producto__precio {
+        text-align: center;
+        font-family: Oswald;
+    }
+    .btn {
+        width: 100px;
+        background-color: $color2;
+        border: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: $color1;
+        margin: 10px;
+    }
+
+}
+
+
+.Noticias__tarjeta {
+    width: 400px;
+    padding: 15px;
+    margin: 5px;
+    background-color: $color3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 3px 10px 3px #333333;
+
+    .btn {
+        width: 100px;
+        background-color: $color2;
+        border: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: $color1;
+        margin: 10px;
+    }
+    .Noticias__p {
+        width: 300px;
+        font-size: 18px;
+        font-family: Oswald;
+        color: $color1;
+        -webkit-text-stroke: 1px black;
+    }
+}
+
+
+.caja {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        width: 600px;
+        padding: 10px;
+        font-size: 20px;
+        font-family: Oswald;
+        color: $color1;
+        background-color: $color3;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px 3px #333333;
+    }
+}
+
+
+.forma {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+       .forma__caja {
+        width: 285px;
+        padding: 15px;
+        background-color: #D60B06;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px 3px #333333;
+        }
+        .forma__nombre {
+        margin: 10px;
+    }
+}
+
+.mapa___caja{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #D60B06;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px #333333;
+}
+
