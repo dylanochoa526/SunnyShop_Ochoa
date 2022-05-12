@@ -1,0 +1,7 @@
+@mixin propiedadesTarjetas($bg-color, $disp,$F-D,$J-C ,$A-I) {
+    background-color: $bg-color;
+    display: $disp;
+    flex-direction: $F-D ;
+    justify-content: $J-C;
+    align-items: $A-I ;
+}

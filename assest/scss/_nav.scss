@@ -48,7 +48,11 @@
             }
         }
     }
-    
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     li {
         display: inline-block;
         font-size: 20px;

@@ -3,17 +3,11 @@
 @import "_nav";
 @import "_footer";
 @import "_header";
-
-
+@import "_media";
+@import "_botones";
 * {
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: $color1;
-    font-size: 30px;
 }
 
 .contenedor {
@@ -67,21 +61,6 @@ main {
     background-image: url(../img/8f8be1d487e8491a7bdb7b20c09fd2f3.jpg)
 }
 
-.Titulo {
-    width: 100%;
-    height: 40;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    font-family: Oswald;
-    color: $color1;
-    -webkit-text-stroke: 1px black;
-}
-
-.Noticias {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 
 
@@ -104,60 +83,31 @@ textarea {
     resize: initial;
 }
 
-
-@media (max-width: 880px) {
-
-    .contenedor {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px auto auto 100px;
-        grid-template-areas: "nav    nav"
-            "header header"
-            "main   main"
-            "footer footer";
-    }
-
-    .menu {
-        height: auto;
-        font-size: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position:absolute;
-
-    }
-    header{
-        font-size: 25px;
-    }
-    
-
-    footer {
-        height: auto;
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main .caja{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main .mapa{
-        font-size: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;    
-
-    }
-
+a {
+    text-decoration: none;
+    color: $color1;
+    font-size: 30px;
+}
+.Noticias {
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn {
+    width: 100px;
+    background-color: $color2;
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: $color1;
+    margin: 10px;
+}
+.Titulo {
+    width: 100%;
+    height: 40;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: Oswald;
+    color: $color1;
+    -webkit-text-stroke: 1px black;
 }

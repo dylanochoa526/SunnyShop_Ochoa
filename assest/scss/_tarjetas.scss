@@ -1,16 +1,13 @@
 @import "_variables";
+@import "_mixin";
 
 .producto { 
-    width: 200px;
-    height: 390px;
-    padding: 15px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: $color1;
-    border-radius: 10px;
+    width: map-get($tarjeta , width );
+    height: map-get($tarjeta , height );
+    padding: map-get($tarjeta , padding );
+    margin: map-get($tarjeta , margin );
+    @include propiedadesTarjetas ($color1,flex,column,center,center);
+    border-radius: map-get($tarjeta , border-radius );
     box-shadow: 5px 5px 15px 5px #333333;
 
     .producto__nombre {
@@ -20,15 +17,6 @@
     .producto__precio {
         text-align: center;
         font-family: Oswald;
-    }
-    .btn {
-        width: 100px;
-        background-color: $color2;
-        border: 0;
-        padding: 5px 10px;
-        border-radius: 5px;
-        color: $color1;
-        margin: 10px;
     }
 
 }
@@ -46,15 +34,6 @@
     justify-content: space-between;
     box-shadow: 3px 3px 10px 3px #333333;
 
-    .btn {
-        width: 100px;
-        background-color: $color2;
-        border: 0;
-        padding: 5px 10px;
-        border-radius: 5px;
-        color: $color1;
-        margin: 10px;
-    }
     .Noticias__p {
         width: 300px;
         font-size: 18px;
@@ -73,6 +52,10 @@
     align-items: center;
     justify-content: center;
 
+    .caja__p{
+        display: flex;
+        justify-content: center;
+    }
     p {
         width: 600px;
         padding: 10px;
@@ -88,17 +71,15 @@
 
 .forma {
     width: 100%;
-    height: auto;
-    margin: 10px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-       .forma__caja {
+        .forma__caja {
         width: 285px;
         padding: 15px;
+        margin: 5px 5px;
         background-color: #D60B06;
         display: flex;
         border-radius: 10px;
